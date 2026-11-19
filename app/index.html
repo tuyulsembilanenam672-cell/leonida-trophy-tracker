@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Tracker — GTA VI trophy guide &amp; checklist</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: checklist, roadmap to the platinum, missable warnings, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI · PlayStation 5 · 55 trophies</p>
+    <h1>Leonida Trophy Tracker</h1>
+    <p class="lede">Every official trophy with its own-words guide and sources, a checklist that saves in your browser, and a roadmap to the platinum — all offline, all in one file set.</p>
+    <div class="progress-wrap" id="progress-wrap" aria-live="polite">
+      <div class="progress-numbers"><strong id="earned-count">0 / 55</strong> earned · <span id="earned-pct">0%</span> · <span id="grade-breakdown"></span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <p class="progress-note" id="progress-note">Platinum “Vice Got a Price!” unlocks when the other 54 are earned — about 200 hours, per PowerPyx.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" class="tab active" id="tab-checklist" data-view="checklist">Checklist</button>
+  <button type="button" class="tab" id="tab-roadmap" data-view="roadmap">Roadmap to the platinum</button>
+</nav>
+
+<section class="toolbar" id="toolbar" aria-label="Filters and tools">
+  <label class="search-box">
+    <span class="visually-hidden">Search trophies</span>
+    <input type="search" id="search" placeholder="Search a trophy or its description…" autocomplete="off">
+  </label>
+  <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind">
+    <button type="button" class="chip active" data-kind="all">All 55</button>
+    <button type="button" class="chip" data-kind="story">Story</button>
+    <button type="button" class="chip" data-kind="missable">Missable</button>
+    <button type="button" class="chip" data-kind="collectibles">Collectibles</button>
+    <button type="button" class="chip" data-kind="activities">Activities</button>
+    <button type="button" class="chip" data-kind="online">Online</button>
+  </div>
+  <label class="select-wrap">Show
+    <select id="earned-filter">
+      <option value="all">all trophies</option>
+      <option value="earned">earned only</option>
+      <option value="unearned">not yet earned</option>
+    </select>
+  </label>
+  <label class="toggle spoiler-toggle">
+    <input type="checkbox" id="spoiler-toggle">
+    <span>Hide story spoilers</span>
+  </label>
+  <div class="tools">
+    <button type="button" class="btn" id="export-btn">Export progress</button>
+    <label class="btn file-btn" for="import-file">Import progress</label>
+    <input type="file" id="import-file" accept=".json,application/json" class="visually-hidden">
+    <button type="button" class="btn danger" id="reset-btn">Reset</button>
+  </div>
+</section>
+
+<main>
+  <section id="checklist-view" class="view">
+    <div class="layout">
+      <ul class="trophy-list" id="trophy-list" aria-live="polite"></ul>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+  <section id="roadmap-view" class="view hidden" aria-label="Roadmap to the platinum">
+    <div class="roadmap-intro">
+      <h2>Roadmap to the platinum</h2>
+      <p>One playthrough is enough — there is no mission replay and no New Game Plus, but nothing except one meditation spot can be missed. Keep a manual save at the start of every chapter and one from just before the final mission. Never use cheats on your trophy save: they switch off trophies and saving.</p>
+      <p class="missable-callout"><strong>⚠ The one possible missable:</strong> Positive Mental Attitude. Lucia’s balcony meditation in Chapter 1 is gone after that chapter. Do it, and keep a Chapter 1 save until the trophy pops.</p>
+    </div>
+    <div id="roadmap"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Names, descriptions and grades are PlayStation’s official list, as listed by Exophase and PSNProfiles. Guides are this tracker’s own words; each names its sources, and where no published guide has confirmed a trigger yet, the guide says so. This app works with the network off and loads nothing from outside its own files.</p>
+  <p class="fineprint">Leonida Trophy Tracker — an unofficial fan guide. Not affiliated with Rockstar Games. No official artwork or logos are used.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
